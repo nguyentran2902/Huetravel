@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home - Huế travel</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="icon" href="../img/logo2.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- ___________Script___________ -->
+
+    <script type="text/javascript">
+        // ______mobileMenu.onclick__________
+        $(document).ready(function() {
+            $("#mobile-menu").click(function() {
+
+                $("#header-nav").slideToggle(300);
+            });
+        });
+
+        // _________________sub-nav.onclick___________
+        $(document).ready(function() {
+            $("#sub-nav-1").click(function() {
+
+                $(".sub-nav-1").slideToggle(300);
+            });
+            // _____________________2_______________
+            $("#sub-nav-2").click(function() {
+
+                $(".sub-nav-2").slideToggle(300);
+            });
+            // _____________________2_______________
+            $("#sub-nav-3").click(function() {
+
+                $(".sub-nav-3").slideToggle(300);
+            });
+            // _____________________2_______________
+            $("#sub-nav-4").click(function() {
+
+                $(".sub-nav-4").slideToggle(300);
+            });
+            // _____________________2_______________
+            $("#sub-nav-5").click(function() {
+
+                $(".sub-nav-5").slideToggle(300);
+            });
+            // _____________________2_______________
+
+        });
+
+
+
+
+        // _______________mess-Btn.onclick____________
+        $(document).ready(function() {
+            $(".mess-btn").click(function() {
+
+                $(".close-btn").css("display", "block");
+                $("#noti").css("display", "block");
+                $(".mess-btn").css("display", "none");
+
+            });
+        });
+
+
+        // ______________close-Btn.onclick_____________
+
+
+        $(document).ready(function() {
+            $(".close-btn").click(function() {
+
+                $(".close-btn").css("display", "none");
+                $("#noti").css("display", "none");
+                $(".mess-btn").css("display", "block");
+
+            });
+        });
+
+
+
+        // ______________mobileMess Close________________
+        $(document).ready(function() {
+            $("#mobileMessClose").click(function() {
+
+                $(".close-btn").css("display", "none");
+                $("#noti").css("display", "none");
+                $(".mess-btn").css("display", "block");
+
+            });
+        });
+        //    ______________Scroll_____________
+
+        var cuonLen = window.pageYOffset;
+        window.onscroll = function() {
+            var cuonXuong = window.pageYOffset;
+            if (cuonLen > cuonXuong) {
+                $("#header-top").css("top", "0");
+
+            } else {
+                $("#header-top").css("top", "-80px");
+
+            }
+            cuonLen = cuonXuong;
+        }
+    </script>
+
+
+    <!-- _________________end Script___________ -->
+</head>
+
+<body>
+    <div id="main" class="full-w">
+
+        <!-- ___________________begin #header________________-->
+        <div id="header" class="full-w">
+
+            <div id="header-top" class="header-top">
+                <div class="header-logo col-4 left">
+                    <a class="left" href="index.html"> <img src="../img/logo2.png" alt="logo"></a>
+
+                    <div class="header-search left ">
+                        <a class="location"><i class=" icon fas fa-map-marker-alt"></i></a>
+                        <input class="search-pc" type="search" placeholder=" Tìm kiếm địa điểm... ">
+                        <input class="search-mb" type="search" placeholder=" Tìm kiếm ... ">
+                        <a class="btn-search" href="#"><i class=" icon fas fa-search-location"></i></a>
+                    </div>
+
+                    <div id="mobile-menu"><i class="fas fa-bars"></i></div>
+
+                </div>
+
+                <div id="header-nav" class="header-nav col-8 right">
+                    <ul class="nav">
+                        <li><a href="index.html"><i class="icon fas fa-home"></i> TRANG CHỦ</a></li>
+
+                        <!-- ___________________1____________________ -->
+
+                        <li id="sub-nav-1">
+                            <a>TOUR <i class="fas fa-sort-down"></i></a>
+                            <ul class="sub-nav sub-nav-1">
+                                <li>
+                                    <a href="index-tour1.html">Huế - Đà Nẵng</a>
+                                </li>
+                                <li>
+                                    <a href="index-tour1.html">Huế - Hà Nội</a>
+                                </li>
+                                <li>
+                                    <a href="index-tour1.html">Huế - Quảng Bình</a>
+                                </li>
+                                <li>
+                                    <a href="index-tour1.html">Huế - Quảng Trị</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- __________________2________________- -->
+                        <li id="sub-nav-2">
+                            <a>ĐIỂM ĐẾN <i class="fas fa-sort-down"></i></a>
+                            <ul class="sub-nav sub-nav-2">
+                                <li>
+                                    <a href="index-place-1.html">Hoàng thành Huế</a>
+                                </li>
+                                <li>
+                                    <a href="index-place-2.html">Chùa Thiên Mụ</a>
+                                </li>
+                                <li>
+                                    <a href="index-place-3.html">Cầu Tràng Tiền</a>
+                                </li>
+                                <li>
+                                    <a href="index-place-4.html">Di tích - Lăng tẩm</a>
+                                </li>
+                                <li>
+                                    <a href="index-place-4.html">Thắng cảnh khác</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- __________________3________________- -->
+                        <li id="sub-nav-3">
+                            <a>KHÁCH SẠN <i class="fas fa-sort-down"></i></a>
+                            <ul class="sub-nav sub-nav-3">
+                                <li>
+                                    <a href="index-stayp-1.html">Vinpearl Hotel Huế</a>
+                                </li>
+                                <li>
+                                    <a href="index-stayp-1.html">Century Riverside </a>
+                                </li>
+                                <li>
+                                    <a href="index-stayp-1.html">Eva Homestay Huế</a>
+                                </li>
+                                <li>
+                                    <a href="index-stayp-1.html">Khách sạn Shark</a>
+                                </li>
+                                <li>
+                                    <a href="index-stayp-1.html">Amy Hostel huế</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- __________________4________________- -->
+                        <li id="sub-nav-4">
+                            <a>ĐẶC SẢN <i class="fas fa-sort-down"></i></a>
+                            <ul class="sub-nav sub-nav-4">
+                                <li>
+                                    <a href="index-food-1.html">Bún bò Huế</a>
+                                </li>
+                                <li>
+                                    <a href="index-food-1.html">Nem lụi</a>
+                                </li>
+                                <li>
+                                    <a href="index-food-1.html">Chè Huế</a>
+                                </li>
+                                <li>
+                                    <a href="index-food-1.html">Bánh bèo</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <!-- __________________5________________- -->
+                        <li id="sub-nav-5">
+                            <a>DỊCH VỤ <i class="fas fa-sort-down"></i></a>
+                            <ul class="sub-nav sub-nav-5">
+                                <li>
+                                    <a href="index-intro-1.html">Lí do đến Huế</a>
+                                </li>
+                                <li>
+                                    <a href="index-intro-2.html">Mùa thích hợp</a>
+                                </li>
+                                <li>
+                                    <a href="index-intro-3.html">Kinh nghiệm du lịch</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <!-- _______________________6___________________ -->
+
+                        <li><a href="index-intro.html">LIÊN HỆ</a></li>
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <!-- ______________ end header-top________________-->
+
+            <div class="header-content">
+                <div class="header-tit">
+                    <h1>HUẾ TRAVEL</h1>
+                    <p>Mang lại dịch vụ hoàn hảo đến với khách hàng</p>
+                </div>
+
+                <div class="header-contact">
+                    <div class="header-add">
+                        <h4>HOTLINE</h4>
+                        <a href="tel: 0234.181.194 ">
+                            <p><i class="fas fa-phone-square"></i> 0234.181.194</p>
+                        </a>
+                    </div>
+
+                    <div class="header-add ">
+                        <h4>EMAIL</h4>
+                        <a href="">
+                            <p><i class="fas fa-envelope"></i> Huetravel456@gmail.com</p>
+                        </a>
+                    </div>
+
+                    <div class="header-add">
+                        <a href=""><i class=" fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+
+                    </div>
+
+                    <a class="contact-btn col-6" href="tel: 0234.181.194 ">LIÊN HỆ NGAY</a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--____________________begin #group____________ -->
+
+        <div id="group">
+            <div class="group-bar">
+                <h2>Thông tin</h2>
+                <div>
+                    <ul>
+                        <h4>Giới thiệu</h4>
+                        <li>
+                            <i class="fas fa-compass"></i><a href="index-intro-1.html">Vì sao bạn nên đến Huế</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i><a href="index-intro-1.html">Lịch sử về Huế</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i><a href="index-intro-1.html">Mùa thích hợp đến Huế</a>
+                        </li>
+
+
+
+
+                    </ul>
+                    <!-- ______________1_____________ -->
+                    <ul>
+                        <h4>Những địa danh nổi tiếng</h4>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-place-1.html">Hoàng Thành Huế</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-place-1.html">Chùa Thiên Mụ</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i><a href="index-place-1.html">Cầu Tràng Tiền</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-place-1.html">Lăng Minh Mạng</a>
+                        </li>
+
+
+                    </ul>
+                    <!-- _______________2_______ -->
+                    <ul>
+                        <h4>Đặc sản của vùng</h4>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-food-1.html">Bún bò Huế</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-food-1.html">Nem lụi</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i><a href="index-food-1.html">Các loại chè</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i><a href="index-food-1.html">Bánh bèo xứ Huế</a>
+                        </li>
+
+
+                    </ul>
+                    <!-- _______________3_________ -->
+                    <ul>
+                        <h4>Tour hấp dẫn</h4>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-tour1.html">Huế - Đà Nẵng</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-tour1.html">Huế - Quảng Nam</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-tour1.html">Huế - Quảng Bình</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-tour1.html">Huế - Quảng Trị</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- ____________________-4_____________ -->
+                    <ul>
+                        <h4>Dịch vụ</h4>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-stayp.html">Khách Sạn</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-stayp.html">SPa</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-compass"></i> <a href="index-vehicle.html">Thuê xe</a>
+                        </li>
+
+
+
+
+                    </ul>
+
+
+
+                    <!-- _________________quang cao_________ -->
+
+                    <div class="quangcao">
+
+                        <a href="index-tour.html">
+                            <div class="quangcao-box">
+                                <img src="../img/qc1.jpg" alt="qc1">
+                            </div>
+                            <h3>Tour khuyến mãi mùa hè!!!</h3>
+                        </a>
+                        <!-- __________2___________ -->
+
+                        <a href="index-tour.html">
+                            <div class="quangcao-box">
+                                <img src="../img/qc2.jpg" alt="qc2">
+                            </div>
+                            <h3> Tour hấp dẫn cho bạn!!!</h3>
+                        </a>
+                        <!-- ___________3______________- -->
+                        <a class="qc-hide" href="index-tour.html">
+                            <div class="quangcao-box">
+                                <img src="../img/qc3.jpg" alt="qc3">
+                            </div>
+                            <h3>Du lịch Huế 1 ngày!!!</h3>
+                        </a>
+                        <!-- ___________4______________- -->
+
+                        <a class="qc-hide" href="index-tour.html">
+                            <div class="quangcao-box">
+                                <img src="../img/qc4.jpg" alt="qc4">
+                            </div>
+                            <h3>Trọn gói giá cực rẻ!!!</h3>
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- ________________end group-bar______________- -->
+
+            <div class="group-news">
+                <div id="tour">
+                    <h1 class="body-tittle">Tour </h1>
+                    <div class="tour-bdy">
+
+                        <!-- ______begin tour content_________ -->
+
+                        <div class="tour-content">
+                            <div class="tour-text">
+                                <h3>Đăng ký tour du lịch Huế giá rẻ</h3>
+                                <p>Tour Khám Phá Huế & Thưởng thức những đặc sản xứ Huế cũng như tham quan các địa điểm nổi tiếng quanh xứ Huế</p>
+                            </div>
+                            <div class="tour-contact full-w">
+                                <h3>YÊU CẦU TƯ VẤN !</h3>
+                                <div>
+                                    <form action="">
+                                        <input class="col-10" type="text" required placeholder="*Họ và tên">
+                                        <input class="col-10" type="tel" required placeholder="*Số điện thoại">
+                                        <input class="col-10" type="text" required placeholder="*Email">
+                                        <textarea class="col-10" required placeholder="*Ghi chú"></textarea>
+                                        <input class="col-6" type="submit" value="Gửi thông tin">
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- __________begin tour infor_______ -->
+                        <div class="tour-infor">
+                            <div class="tour-top">
+                                <div class="tour-1 tour" href="">
+                                    <div class="img-trans"><img src="../img/tour1.jpg" alt=""> </div>
+
+                                    <div class="pd-12 back-w">
+                                        <h3><a href="index-tour1.html"> Du lịch Đà Nẵng - Bà Nà - Huế - Thiền Viện</a></h3>
+
+                                        <p><i class="far fa-clock"></i> 4 ngày 3 đêm</p>
+                                        <p><i class="far fa-calendar-check"></i> 29,30/4...</p>
+                                    </div>
+                                    <div class="price"><i class="fas fa-money-bill-wave"></i> 4.990.000đ</div>
+                                    <div class="infor">
+                                        <p>Hành trình: Đà Nẵng - Bà Nà - Huế - Thiền Viện, 4 ngày 3 đêm,ngày khởi hành 29,30/4, vận chuyển: máy bay khứ hồi, xe khách đời mới</p>
+
+                                    </div>
+
+                                    <span class="infor-back" style="background-color: rgb(93, 146, 106)"></span>
+                                </div>
+                                <!-- _______________2____________ -->
+                                <div class="tour-2 tour" href="">
+                                    <div class="img-trans"> <img src="../img/tour2.jpg" alt=""> </div>
+
+                                    <div class="pd-12 back-w">
+                                        <h3><a href="index-tour1.html"> Du lịch Đà Nẵng - Huế - Thánh địa La Vang- Động Phong Nha </a></h3>
+                                        <p><i class="far fa-clock"></i> 3 ngày 3 đêm</p>
+                                        <p><i class="far fa-calendar-check"></i> 22,24/4...</p>
+                                    </div>
+                                    <div class="price"><i class="fas fa-money-bill-wave"></i> 5.890.000đ</div>
+                                    <div class="infor">
+                                        <p>Hành trình: Đà Nẵng - Huế - Thánh địa La Vang- Động Phong Nha, 3 ngày 3 đêm,ngày khởi hành 22,24/4, vận chuyển: máy bay khứ hồi, xe khách đời mới</p>
+
+                                    </div>
+
+                                    <span class="infor-back" style="background-color: rgb(133, 18, 133)"></span>
+                                </div>
+                            </div>
+
+                            <!-- ____________3________________-- -->
+                            <div class="tour-bot">
+                                <div class="tour-3 tour" href="">
+                                    <div class="img-trans"> <img src="../img/tour3.jpg" alt=""> </div>
+
+                                    <div class="pd-12 back-w">
+                                        <h3>
+                                            <a href="index-tour1.html">Du lịch Huế - Đà Nẵng - Hội An</a>
+                                        </h3>
+                                        <p><i class="far fa-clock"></i> 5 ngày 4 đêm</p>
+                                        <p><i class="far fa-calendar-check"></i> 30/4,2/5...</p>
+                                    </div>
+                                    <div class="price"><i class="fas fa-money-bill-wave"></i> 4.590.000đ</div>
+                                    <div class="infor">
+                                        <p>Hành trình: Huế - Đà Nẵng - Hội An, 3 ngày 3 đêm,ngày khởi hành 22,24/4, vận chuyển: máy bay khứ hồi, xe khách đời mới</p>
+
+                                    </div>
+
+                                    <span class="infor-back" style="background-color: rgb(20, 20, 145)"></span>
+                                </div>
+                                <!-- ____________4______________- -->
+                                <div class="tour-4 tour" href="">
+                                    <div class="img-trans"> <img src="../img/tour4.jpg" alt=""> </div>
+
+                                    <div class="pd-12 back-w">
+                                        <h3>
+                                            <a href="index-tour1.html">Du lịch Huế trong ngày</a>
+                                        </h3>
+
+                                        <p><i class="far fa-clock"></i> Trong ngày</p>
+                                        <p><i class="far fa-calendar-check"></i> 13,24/4...</p>
+
+                                    </div>
+                                    <div class="price"><i class="fas fa-money-bill-wave"></i> 1.990.000đ</div>
+                                    <div class="infor">
+                                        <p>Hành trình: Nội thành - chùa Thiên Mụ - Thiền Viện - Bạch Mã,ngày khởi hành 13,24/4, vận chuyển:xe khách đời mới</p>
+
+                                    </div>
+
+                                    <span class="infor-back" style="background-color: rgb(157, 161, 29)"></span>
+                                </div>
+                            </div>
+                            <!-- _______________5___________________ -->
+                            <div class="tour-top">
+                                <div class="tour-1 tour" href="">
+                                    <div class="img-trans"><img src="../img/tour5.jpg" alt=""> </div>
+
+                                    <div class="pd-12 back-w">
+                                        <h3><a href="index-tour1.html"> Du lịch Hà Nội - Huế - Đà Nẵng</a></h3>
+
+                                        <p><i class="far fa-clock"></i> 5 ngày 4 đêm</p>
+                                        <p><i class="far fa-calendar-check"></i> 15,16/4...</p>
+                                    </div>
+                                    <div class="price"><i class="fas fa-money-bill-wave"></i> 7.290.000đ</div>
+                                    <div class="infor">
+                                        <p>Hành trình:Hà Nội - Huế - Đà Nẵng, 5 ngày 4 đêm,ngày khởi hành 15,16/4, vận chuyển: máy bay khứ hồi, xe khách đời mới</p>
+
+                                    </div>
+
+                                    <span class="infor-back" style="background-color: rgb(93, 146, 106)"></span>
+                                </div>
+                                <!-- _______________6___________  -->
+                                <div class="tour-2 tour" href="">
+                                    <div class="img-trans"> <img src="../img/tour6.jpg" alt=""> </div>
+
+                                    <div class="pd-12 back-w">
+                                        <h3><a href="index-tour1.html"> Du lịch Đà Nẵng - Lăng Cô - Thiên An  </a></h3>
+                                        <p><i class="far fa-clock"></i> 3 ngày 3 đêm</p>
+                                        <p><i class="far fa-calendar-check"></i> 22,23/4...</p>
+                                    </div>
+                                    <div class="price"><i class="fas fa-money-bill-wave"></i> 4.890.000đ</div>
+                                    <div class="infor">
+                                        <p>Hành trình: Đà Nẵng - Lăng Cô - Thiên An , 3 ngày 3 đêm,ngày khởi hành 22,23/4, vận chuyển: xe khách đời mới</p>
+
+                                    </div>
+
+                                    <span class="infor-back" style="background-color: rgb(133, 18, 133)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ___________end group__________________- -->
+
+        <div id="footer">
+            <div class="footer-item">
+
+                <h2>Huế travel</h2>
+                <ul>
+                    <li>Địa chỉ: 132 Trường Chinh, Tp Huế</li>
+                    <li>
+                        <a href="tel:0234.567.800"> Liên hệ : 0234.567.800</a>
+                    </li>
+                    <li>
+                        <a href="email: huetravel@gmail.com">Email: Huetravel@gmail.com</a>
+                    </li>
+                    <li>Theo dõi chúng tôi trên:
+                        <a href=""><i style="color:#0f8ff2 ;" class="fab fa-2x fa-facebook-square"></i></a>
+                        <a href=""><i style="color:#0f8ff2 ;" class="fab fa-2x fa-twitter-square"></i></a>
+                        <a href=""><i style="color:#0f8ff2 ;" class="fab fa-2x fa-instagram-square"></i></i></a>
+
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-item">
+                <h2>Đăng kí nhận tour khuyến mãi</h2>
+                <form action="">
+                    <input class="col-10" type="text" required placeholder="*Họ và tên">
+                    <input class="col-10" type="tel" required placeholder="*Số điện thoại">
+                    <input class="col-10" type="text" required placeholder="*Email">
+                    <textarea class="col-10" required placeholder="*Ghi chú"></textarea>
+                    <input class="col-6" type="submit" value="Đăng kí">
+                </form>
+
+            </div>
+            <div class="footer-item service">
+                <h2>Dịch vụ</h2>
+                <ul>
+                    <li>
+                        <a href="">Vé máy bay</a></li>
+                    <li>
+                        <a href="">Khách sạn</a></li>
+                    <li>
+                        <a href="">Đưa đón</a></li>
+                    <li>
+                        <a href="">Hướng dẫn viên</a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+        <!-- _________________end footer____________ -->
+
+        <div id="line-footer">
+            <div class="designer left col-5">Designed by <a href="">Nguyên Trần</a></div>
+
+            <div class="line-contact right col-6">
+                <ul class="navi">
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Dịch vụ</a></li>
+                    <li><a href="">Sản phẩm</a></li>
+                    <li><a href="">Nhóm</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ______________end line footer_____________ -->
+
+        <div id="call-now">
+            <div>
+                <p class="call-text ">CALL NOW</p>
+                <a href="tel:0905228606 ">
+                    <div class="call-aro-out"></div>
+                    <div class="call-aro-in"></div>
+                    <div title="CALL NOW" class="call-btn"></div>
+
+                </a>
+
+            </div>
+        </div>
+        <!-- __________end call now______________ -->
+
+        <div id="messenger">
+            <div class="mess-btn">
+                <div><i class="fab fa-facebook-messenger"></i></i>
+                </div>
+
+            </div>
+
+            <div class="close-btn">
+                <div><i class="fas fa-times-circle"></i> </div>
+
+            </div>
+        </div>
+
+        <!-- _____________end messenger________________ -->
+
+        <div id="noti">
+            <div class="noti-tittle full-w left">
+                <span>
+                    Gửi tin nhắn
+                    <i id="mobileMessClose" class="fas fa-times right"></i>
+
+                </span>
+                <p> Bạn vui lòng điền vào biểu mẫu dưới đây và chúng tôi sẽ liên lạc với bạn ngay khi có thể.</p>
+            </div>
+            <div class="noti-form col-11">
+                <form action="">
+                    <input class="col-11" type="text" required placeholder="*Tên">
+                    <input class="col-11" type="text" required placeholder="*Email">
+                    <textarea class="col-11" required placeholder="*Thư"></textarea>
+                    <input class="col-11" type="submit" value="Hoàn tất">
+                </form>
+
+            </div>
+
+            <div class="noti-end full-w">
+                <a>we're<img src="../img/thunder.png" alt="">by <b>Tawk.to</b> </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- ___________________end main__________ -->
+
+</body>
+
+</html>
